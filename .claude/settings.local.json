@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//c/Users/DELL/.claude/**)",
+      "Bash(npm run *)",
+      "Bash(/c/Windows/System32/taskkill.exe /F /PID 23984)",
+      "Bash(netstat -ano)"
+    ]
+  }
+}

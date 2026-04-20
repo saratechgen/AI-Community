@@ -1,0 +1,10 @@
+{
+  "links": [
+    { "icon": "Newspaper",    "label": "AI News",       "route": "/news"          },
+    { "icon": "Trophy",       "label": "Leaderboard",   "route": "/leaderboard"   },
+    { "icon": "CalendarDays", "label": "Events",        "route": "/events"        },
+    { "icon": "Megaphone",    "label": "Announcements", "route": "/announcements" },
+    { "icon": "Target",       "label": "Vision",        "route": "/vision"        },
+    { "icon": "Info",         "label": "About Us",      "route": "/about"         }
+  ]
+}

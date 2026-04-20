@@ -1,0 +1,8 @@
+{
+  "updated_at": "2026-04-17",
+  "entries": [
+    { "rank": 1, "division": "Distribution A",    "score": 94, "max_score": 100 },
+    { "rank": 2, "division": "Customer Service",  "score": 87, "max_score": 100 },
+    { "rank": 3, "division": "IT & Innovation",   "score": 79, "max_score": 100 }
+  ]
+}

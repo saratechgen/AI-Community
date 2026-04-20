@@ -1,0 +1,15 @@
+{
+  "title": "DEWA AI Adoption Community",
+  "mission_label": "AI ADOPTION DEPARTMENT",
+  "subtitle": "Your daily hub for AI news, quizzes and community events.",
+  "categories": ["AI @ Work", "Agents", "Quick Tips", "Claude", "Advancements"],
+  "cta_label": "Explore AI News",
+  "cta_route": "/news",
+  "pills": [
+    { "label": "AI News",       "route": "/news"          },
+    { "label": "Daily Quiz",    "route": "/leaderboard"   },
+    { "label": "Events",        "route": "/events"        },
+    { "label": "Announcements", "route": "/announcements" },
+    { "label": "Vision",        "route": "/vision"        }
+  ]
+}

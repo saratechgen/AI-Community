@@ -1,0 +1,25 @@
+{
+  "events": [
+    {
+      "id": "e1",
+      "title": "AI Workshop — Prompt Engineering Basics",
+      "date": "2026-04-20",
+      "time": "10:00 – 11:00",
+      "location": "Room 3B, HQ"
+    },
+    {
+      "id": "e2",
+      "title": "Prompt Lab — Open Practice Session",
+      "date": "2026-04-24",
+      "time": "14:00 – 15:30",
+      "location": "Online (Teams)"
+    },
+    {
+      "id": "e3",
+      "title": "AI Demo Day — Division Showcase",
+      "date": "2026-04-28",
+      "time": "09:00 – 12:00",
+      "location": "Main Hall, HQ"
+    }
+  ]
+}

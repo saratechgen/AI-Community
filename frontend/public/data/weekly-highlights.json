@@ -1,0 +1,16 @@
+{
+  "highlights": [
+    {
+      "icon": "Megaphone",
+      "label": "Announcements",
+      "value": "2 New",
+      "route": "/announcements"
+    },
+    {
+      "icon": "CalendarDays",
+      "label": "Next Event",
+      "value": "Tomorrow · 10:00",
+      "route": "/events"
+    }
+  ]
+}
