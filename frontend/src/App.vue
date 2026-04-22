@@ -69,6 +69,11 @@
             <span class="nav-icon-wrap icon-bg--about"><Info :size="16" class="nav-icon icon-info" /></span>
             <span class="nav-label" v-if="!sidebarCollapsed">About Us</span>
           </RouterLink>
+
+          <RouterLink to="/ask" class="nav-item" @click="isMobileOpen = false">
+            <span class="nav-icon-wrap icon-bg--ask"><HelpCircle :size="16" class="nav-icon icon-ask" /></span>
+            <span class="nav-label" v-if="!sidebarCollapsed">Ask AI Adoption</span>
+          </RouterLink>
         </div>
 
       </nav>
@@ -90,7 +95,7 @@ import { ref } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import {
   Home, Newspaper, Trophy, CalendarDays, Megaphone,
-  Quote, Info, ChevronLeft, ChevronRight, Menu, X,
+  Quote, Info, HelpCircle, ChevronLeft, ChevronRight, Menu, X,
 } from 'lucide-vue-next'
 
 const sidebarCollapsed = ref(false)
@@ -222,6 +227,7 @@ const isMobileOpen     = ref(false)
 .icon-bg--announce { background: #fee2e2; }
 .icon-bg--vision   { background: #dbeafe; }
 .icon-bg--about    { background: #d1fae5; }
+.icon-bg--ask      { background: #fdf4ff; }
 
 .nav-item:hover .nav-icon-wrap { opacity: 0.75; }
 .nav-item.router-link-exact-active .nav-icon-wrap {
@@ -238,6 +244,7 @@ const isMobileOpen     = ref(false)
 .icon-bg--announce .nav-icon { color: #d93535; }
 .icon-bg--vision   .nav-icon { color: #2255b0; }
 .icon-bg--about    .nav-icon { color: #5bb85d; }
+.icon-bg--ask      .nav-icon { color: #7c3aed; }
 
 /* Hover only — keep icon colour on active so each section retains its identity */
 .nav-item:hover .nav-icon { color: #166534; }
@@ -421,5 +428,17 @@ const isMobileOpen     = ref(false)
   15%            { transform: rotateY(90deg) scale(0.9); }
   25%            { transform: rotateY(180deg) scale(1); }
   30%            { transform: rotateY(270deg) scale(0.9); }
+}
+
+.icon-ask {
+  animation: nav-ask 2.6s ease-in-out infinite;
+  animation-delay: 3s;
+}
+@keyframes nav-ask {
+  0%, 100% { transform: scale(1) rotate(0deg); }
+  20%       { transform: scale(1.15) rotate(-8deg); }
+  45%       { transform: scale(1.2) rotate(8deg); }
+  65%       { transform: scale(1.08) rotate(-4deg); }
+  82%       { transform: scale(1.03) rotate(2deg); }
 }
 </style>

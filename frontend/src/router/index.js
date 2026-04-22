@@ -7,6 +7,7 @@ import QuizView          from '../views/QuizView.vue'
 import EventsView        from '../views/EventsView.vue'
 import NewsView          from '../views/NewsView.vue'
 import AnnouncementsView from '../views/AnnouncementsView.vue'
+import AskView           from '../views/AskView.vue'
 
 const routes = [
   { path: '/',              component: HomeView          },
@@ -14,6 +15,7 @@ const routes = [
   { path: '/leaderboard',   component: LeaderboardView   },
   { path: '/events',        component: EventsView        },
   { path: '/announcements', component: AnnouncementsView },
+  { path: '/ask',           component: AskView           },
   { path: '/leaders-message', component: LeadersMessageView },
   { path: '/about',         component: AboutView         },
 ]

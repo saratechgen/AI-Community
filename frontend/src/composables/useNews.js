@@ -8,9 +8,10 @@ export function useNews() {
     advancements: [],
     quickTips:    [],
   })
-  const loading = ref(false)
-  const error   = ref(null)
-  const brief   = ref('')
+  const loading   = ref(false)
+  const error     = ref(null)
+  const brief     = ref('')
+  const fetchedAt = ref(null)
 
   async function fetchNews() {
     loading.value = true
@@ -20,8 +21,9 @@ export function useNews() {
       if (!res.ok) throw new Error(`Server error: ${res.status}`)
       const json = await res.json()
       if (json.error) throw new Error(json.error.message)
-      news.value  = json.data
-      brief.value = json.meta?.brief ?? ''
+      news.value      = json.data
+      brief.value     = json.meta?.brief ?? ''
+      fetchedAt.value = json.meta?.fetched_at ? new Date(json.meta.fetched_at) : new Date()
     } catch (e) {
       error.value = 'Could not load news. Please try again later.'
       console.error(e)
@@ -30,5 +32,5 @@ export function useNews() {
     }
   }
 
-  return { news, loading, error, fetchNews, brief }
+  return { news, loading, error, fetchNews, brief, fetchedAt }
 }

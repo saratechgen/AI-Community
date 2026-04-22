@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Database & runtime data
+backend/news.db
+backend/ask_submissions.json
+
+# Environment (set vars in deployment platform, not here)
+frontend/.env
+frontend/.env.local
+
+# Claude tooling
+.claude/settings.local.json
+
+# Node
+node_modules/
+frontend/dist/

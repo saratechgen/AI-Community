@@ -67,7 +67,9 @@ import { ExternalLink, Info } from 'lucide-vue-next'
 .page-subtitle {
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;
-  color: #65635d;
+  font-weight: 500;
+  color: #3a3834;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.85);
   margin: 0;
 }
 

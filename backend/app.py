@@ -13,7 +13,10 @@ from fastapi.middleware.cors import CORSMiddleware
 
 from database import init_db, get_articles, is_empty
 from quiz_db import init_quiz_db
-from quiz_routes import router as quiz_router
+from dubai_events_db import init_dubai_events_db
+from quiz_routes   import router as quiz_router
+from events_routes import router as events_router
+from ask_routes    import router as ask_router
 from scheduler import refresh_news, publish_quiz, start_scheduler, stop_scheduler
 
 logging.basicConfig(
@@ -63,6 +66,7 @@ async def lifespan(app: FastAPI):
     log.info("Starting up — initialising database")
     await init_db()
     await init_quiz_db()
+    await init_dubai_events_db()
 
     if await is_empty():
         log.info("Database empty — running initial fetch")
@@ -86,6 +90,8 @@ app.add_middleware(
 
 
 app.include_router(quiz_router)
+app.include_router(events_router)
+app.include_router(ask_router)
 
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
@@ -111,11 +117,11 @@ async def health():
 async def get_news():
     try:
         results = await asyncio.gather(
-            get_articles("claude",       3),
-            get_articles("ai-agents",    3),
-            get_articles("ai-at-work",   3),
-            get_articles("advancements", 3),
-            get_articles("quick-tips",   3),
+            get_articles("claude",       5),
+            get_articles("ai-agents",    5),
+            get_articles("ai-at-work",   5),
+            get_articles("advancements", 5),
+            get_articles("quick-tips",   5),
         )
         claude, ai_agents, ai_at_work, advancements, quick_tips = results
 

@@ -1,0 +1,43 @@
+{
+  "events": [
+    {
+      "id": "dxb-world-ai-expo-2026",
+      "title": "World AI Expo Dubai 2026",
+      "date": "2026-10-07",
+      "endDate": "2026-10-08",
+      "time": "",
+      "location": "Dubai, UAE",
+      "country": "UAE",
+      "organizer": "World AI Expo",
+      "url": "https://worldaiexpo.io",
+      "type": "conference",
+      "source": "dubai-curated"
+    },
+    {
+      "id": "dxb-ai-festival-2026",
+      "title": "Dubai AI Festival 2026",
+      "date": "2026-10-26",
+      "endDate": "2026-10-27",
+      "time": "",
+      "location": "Dubai World Trade Centre, Dubai",
+      "country": "UAE",
+      "organizer": "Dubai AI Campus",
+      "url": "https://dubaiaifestival.com",
+      "type": "conference",
+      "source": "dubai-curated"
+    },
+    {
+      "id": "dxb-gitex-global-2026",
+      "title": "GITEX Global 2026",
+      "date": "2026-12-07",
+      "endDate": "2026-12-11",
+      "time": "",
+      "location": "Dubai Exhibition Centre, Expo City Dubai",
+      "country": "UAE",
+      "organizer": "GITEX",
+      "url": "https://www.gitex.com",
+      "type": "conference",
+      "source": "dubai-curated"
+    }
+  ]
+}

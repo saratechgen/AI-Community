@@ -1,0 +1,34 @@
+{
+  "events": [
+    {
+      "id": "d1",
+      "title": "AI Workshop — Prompt Engineering Basics",
+      "date": "2026-05-05",
+      "time": "10:00 – 11:00",
+      "location": "Room 3B, HQ",
+      "type": "workshop",
+      "description": "Hands-on session covering foundational prompting techniques for everyday tasks.",
+      "registrationUrl": null
+    },
+    {
+      "id": "d2",
+      "title": "Prompt Lab — Open Practice Session",
+      "date": "2026-05-14",
+      "time": "14:00 – 15:30",
+      "location": "Online (Teams)",
+      "type": "workshop",
+      "description": "Drop-in practice session to apply prompting with real work tasks.",
+      "registrationUrl": null
+    },
+    {
+      "id": "d3",
+      "title": "AI Demo Day — Division Showcase",
+      "date": "2026-05-21",
+      "time": "09:00 – 12:00",
+      "location": "Main Hall, HQ",
+      "type": "demo",
+      "description": "Teams present AI-assisted projects to leadership and peers.",
+      "registrationUrl": null
+    }
+  ]
+}
