@@ -56,7 +56,7 @@ function optionClass(key) {
 </script>
 
 <style scoped>
-.quiz-question { display: flex; flex-direction: column; gap: 16px; }
+.quiz-question { display: flex; flex-direction: column; gap: 12px; }
 
 .q-text {
   font-family: 'Space Grotesk', sans-serif;
@@ -67,13 +67,13 @@ function optionClass(key) {
   margin: 0;
 }
 
-.options { display: flex; flex-direction: column; gap: 10px; }
+.options { display: flex; flex-direction: column; gap: 7px; }
 
 .option-btn {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 12px 16px;
+  gap: 10px;
+  padding: 9px 14px;
   background: #f8f7f5;
   border: 1.5px solid #e2e0dc;
   border-radius: 8px;
@@ -90,7 +90,7 @@ function optionClass(key) {
 
 .opt-label {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 700;
   color: #166534;
   background: #dcfce7;
@@ -100,7 +100,7 @@ function optionClass(key) {
 }
 .opt-text {
   font-family: 'DM Sans', sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   color: #3a3834;
 }
 

@@ -135,7 +135,7 @@
               <button v-if="!(officialResults[currentStage]?.passed && currentStage === 3)" class="btn-secondary" @click="retakeStage">
                 Retry Stage {{ currentStage }} (practice)
               </button>
-              <button class="btn-ghost" @click="showFinal">View Summary</button>
+              <button class="btn-secondary" @click="showFinal">View Summary</button>
             </div>
           </div>
 
