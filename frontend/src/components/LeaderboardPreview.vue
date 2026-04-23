@@ -70,21 +70,21 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   flex-shrink: 0;
 }
 .strip-title {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   font-size: 15px;
   font-weight: 700;
   color: #1a1917;
   margin: 0 0 3px;
 }
 .strip-hook {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   font-size: 13px;
   font-weight: 600;
   color: #1a1917;
   margin: 4px 0 2px;
 }
 .strip-rule {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   color: #a8a69f;
   margin: 0;
@@ -109,14 +109,14 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   gap: 2px;
 }
 .stat-num {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   font-size: 17px;
   font-weight: 700;
   color: #166534;
   line-height: 1;
 }
 .stat-label {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 10px;
   color: #85837c;
   text-transform: uppercase;
@@ -134,7 +134,7 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   flex-wrap: wrap;
 }
 .new-badge {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 9px;
   font-weight: 700;
   text-transform: uppercase;
@@ -160,7 +160,7 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   color: #166534;
   border: 1.5px solid #166534;
   border-radius: 7px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 600;
   text-decoration: none;

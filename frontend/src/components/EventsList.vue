@@ -98,9 +98,9 @@ const monthOf = (iso) => toDate(iso).toLocaleDateString('en-GB', { month: 'short
 }
 
 .section-header   { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-.section-title    { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; color: #1a1917; margin: 0; display: flex; align-items: center; gap: 7px; }
+.section-title    { font-family: 'Satoshi', sans-serif; font-size: 15px; font-weight: 700; color: #1a1917; margin: 0; display: flex; align-items: center; gap: 7px; }
 .title-icon       { color: #166534; }
-.view-all         { display: inline-flex; align-items: center; gap: 3px; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; color: #166534; text-decoration: none; transition: gap 150ms; }
+.view-all         { display: inline-flex; align-items: center; gap: 3px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #166534; text-decoration: none; transition: gap 150ms; }
 .view-all:hover   { gap: 7px; }
 
 /* Group labels */
@@ -108,7 +108,7 @@ const monthOf = (iso) => toDate(iso).toLocaleDateString('en-GB', { month: 'short
   display: flex;
   align-items: center;
   gap: 5px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
@@ -150,18 +150,18 @@ const monthOf = (iso) => toDate(iso).toLocaleDateString('en-GB', { month: 'short
 }
 .event-date--blue { background: #dbeafe; color: #2255b0; border-color: #2255b0; }
 
-.date-day   { font-family: 'Space Grotesk', sans-serif; font-size: 15px; font-weight: 700; line-height: 1; }
-.date-month { font-family: 'DM Sans', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; margin-top: 2px; }
+.date-day   { font-family: 'Satoshi', sans-serif; font-size: 15px; font-weight: 700; line-height: 1; }
+.date-month { font-family: 'Inter', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; margin-top: 2px; }
 
 /* Body */
 .event-body  { flex: 1; min-width: 0; }
-.event-title { display: block; font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 600; color: #1a1917; margin-bottom: 4px; line-height: 1.4; transition: color 140ms; }
-.event-meta  { display: flex; align-items: center; gap: 5px; font-family: 'DM Sans', sans-serif; font-size: 11px; color: #85837c; flex-wrap: wrap; }
+.event-title { display: block; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #1a1917; margin-bottom: 4px; line-height: 1.4; transition: color 140ms; }
+.event-meta  { display: flex; align-items: center; gap: 5px; font-family: 'Inter', sans-serif; font-size: 11px; color: #85837c; flex-wrap: wrap; }
 .ev-org      { font-weight: 600; color: #2255b0; }
 .ev-ext-icon { margin-left: 2px; color: #a8a69f; flex-shrink: 0; }
 .dot         { opacity: 0.4; }
 
 /* States */
-.ev-state { font-family: 'DM Sans', sans-serif; font-size: 13px; color: #85837c; padding: 16px 0; }
-.ev-empty { font-family: 'DM Sans', sans-serif; font-size: 12px; color: #a8a69f; margin: 4px 0 0; padding-bottom: 2px; }
+.ev-state { font-family: 'Inter', sans-serif; font-size: 13px; color: #85837c; padding: 16px 0; }
+.ev-empty { font-family: 'Inter', sans-serif; font-size: 12px; color: #a8a69f; margin: 4px 0 0; padding-bottom: 2px; }
 </style>

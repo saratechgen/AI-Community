@@ -49,7 +49,7 @@ const { data } = useStaticJson('/data/hero.json')
   display: flex;
   align-items: center;
   gap: 8px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
@@ -65,7 +65,7 @@ const { data } = useStaticJson('/data/hero.json')
 }
 
 .hero-title {
-  font-family: 'Space Grotesk', sans-serif;
+  font-family: 'Satoshi', sans-serif;
   font-size: 30px;
   font-weight: 700;
   color: #1a1917;
@@ -74,7 +74,7 @@ const { data } = useStaticJson('/data/hero.json')
 }
 
 .hero-subtitle {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #3a3834;
@@ -93,7 +93,7 @@ const { data } = useStaticJson('/data/hero.json')
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 12px;
   font-weight: 600;
   padding: 8px 14px;
@@ -113,7 +113,7 @@ const { data } = useStaticJson('/data/hero.json')
   gap: 6px;
 }
 .hero-cat {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 600;
   color: #166534;
@@ -128,7 +128,7 @@ const { data } = useStaticJson('/data/hero.json')
   gap: 6px;
 }
 .hero-pill {
-  font-family: 'DM Sans', sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 500;
   color: #85837c;
