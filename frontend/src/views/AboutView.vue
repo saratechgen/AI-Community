@@ -56,47 +56,42 @@ import { MapPin } from 'lucide-vue-next'
 
 /* ── Header ─────────────────────────────────────────────────── */
 .page-header {
-  border-left: 4px solid #166534;
-  border-bottom: 1px solid #e2e0dc;
-  border-radius: 0 6px 0 0;
-  background: #f8f7f5;
-  padding: 12px 16px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #D9D5CD;
   margin-bottom: 16px;
 }
 .page-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
-  color: #1a1917;
-  margin: 0 0 3px;
+  color: #1F1F1B;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
 }
 .page-subtitle {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: #3a3834;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.85);
+  font-size: 14px;
+  color: #6E6A63;
   margin: 0;
 }
 
 /* ── Main card ───────────────────────────────────────────────── */
 .about-card {
   background: #ffffff;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid #166534;
-  border-radius: 10px;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
   gap: 14px;
   margin-bottom: 16px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
 }
 
 .section-body {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
-  color: #3a3834;
+  color: #3A3730;
   margin: 0;
   line-height: 1.75;
 }
@@ -111,16 +106,16 @@ import { MapPin } from 'lucide-vue-next'
   font-family: 'DM Sans', sans-serif;
   font-size: 11px;
   font-weight: 600;
-  color: #166534;
-  background: #dcfce7;
+  color: #0E6B43;
+  background: #DFF3E8;
   border-radius: 4px;
   padding: 3px 10px;
 }
 
 /* ── Contact ─────────────────────────────────────────────────── */
 .contact-block {
-  background: #f8f7f5;
-  border: 1px solid #e2e0dc;
+  background: #F6F5F2;
+  border: 1px solid #D9D5CD;
   border-radius: 10px;
   padding: 14px 20px;
   display: inline-flex;
@@ -131,7 +126,7 @@ import { MapPin } from 'lucide-vue-next'
   align-items: center;
   gap: 10px;
 }
-.contact-icon { color: #166534; flex-shrink: 0; }
+.contact-icon { color: #0E6B43; flex-shrink: 0; }
 .contact-text {
   display: flex;
   flex-direction: column;
@@ -141,12 +136,12 @@ import { MapPin } from 'lucide-vue-next'
   font-family: 'Space Grotesk', sans-serif;
   font-size: 13px;
   font-weight: 700;
-  color: #1a1917;
+  color: #1F1F1B;
 }
 .contact-address {
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  color: #65635d;
+  color: #6E6A63;
 }
 
 @media (max-width: 640px) {

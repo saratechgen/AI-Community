@@ -89,9 +89,9 @@ function cardClass(stage) {
 }
 
 .stage-card {
-  background: #f8f7f5;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid #e2e0dc;
+  background: #F6F5F2;
+  border: 1px solid #D9D5CD;
+  border-top: 3px solid #D9D5CD;
   border-radius: 10px;
   padding: 20px;
   display: flex;
@@ -117,7 +117,7 @@ function cardClass(stage) {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #a8a69f;
+  color: #A8A49D;
 }
 
 .stage-icon { font-size: 18px; }
@@ -126,13 +126,13 @@ function cardClass(stage) {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #1a1917;
+  color: #1F1F1B;
 }
 
 .stage-meta {
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  color: #85837c;
+  color: #857E76;
 }
 
 .stage-score {
@@ -171,7 +171,7 @@ function cardClass(stage) {
   margin-top: auto;
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  color: #a8a69f;
+  color: #A8A49D;
 }
 
 @media (max-width: 640px) {

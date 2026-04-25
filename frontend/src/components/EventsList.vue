@@ -90,17 +90,16 @@ const monthOf = (iso) => toDate(iso).toLocaleDateString('en-GB', { month: 'short
 <style scoped>
 .events-section {
   background: #ffffff;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid var(--accent, #166534);
-  border-radius: 10px;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 20px 22px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.04);
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
 }
 
 .section-header   { display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px; }
-.section-title    { font-family: 'Satoshi', sans-serif; font-size: 15px; font-weight: 700; color: #1a1917; margin: 0; display: flex; align-items: center; gap: 7px; }
-.title-icon       { color: #166534; }
-.view-all         { display: inline-flex; align-items: center; gap: 3px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #166534; text-decoration: none; transition: gap 150ms; }
+.section-title    { font-family: 'Satoshi', sans-serif; font-size: 15px; font-weight: 700; color: #1F1F1B; margin: 0; display: flex; align-items: center; gap: 7px; }
+.title-icon       { color: #0E6B43; }
+.view-all         { display: inline-flex; align-items: center; gap: 3px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #0E6B43; text-decoration: none; transition: gap 150ms; }
 .view-all:hover   { gap: 7px; }
 
 /* Group labels */
@@ -113,12 +112,12 @@ const monthOf = (iso) => toDate(iso).toLocaleDateString('en-GB', { month: 'short
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #166534;
+  color: #0E6B43;
   margin-bottom: 8px;
 }
-.ev-label--blue { color: #2255b0; }
+.ev-label--blue { color: #0E6B43; }
 
-.ev-divider { border: none; border-top: 1px solid #f0efe9; margin: 12px 0; }
+.ev-divider { border: none; border-top: 1px solid #ECEAE3; margin: 12px 0; }
 
 /* Event rows */
 .events-list  { display: flex; flex-direction: column; }
@@ -127,37 +126,38 @@ const monthOf = (iso) => toDate(iso).toLocaleDateString('en-GB', { month: 'short
   align-items: flex-start;
   gap: 12px;
   padding: 10px 0;
-  border-bottom: 1px solid #f0efe9;
+  border-bottom: 1px solid #ECEAE3;
   text-decoration: none;
+  transition: padding-left 140ms, box-shadow 140ms, transform 140ms;
 }
 .event-row:last-child { border-bottom: none; padding-bottom: 0; }
-.event-row--link { cursor: pointer; transition: padding-left 140ms; }
-.event-row--link:hover { padding-left: 3px; }
-.event-row--link:hover .event-title { color: #2255b0; }
+.event-row:hover { padding-left: 3px; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.07); }
+.event-row:hover .event-title { color: #0E6B43; }
+.event-row--link { cursor: pointer; }
 
 /* Date chip */
 .event-date {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: #dcfce7;
-  color: #166534;
-  border: 1px solid #166534;
+  background: #DFF3E8;
+  color: #0E6B43;
+  border: 1px solid #0E6B43;
   border-radius: 7px;
   padding: 5px 9px;
   min-width: 38px;
   flex-shrink: 0;
 }
-.event-date--blue { background: #dbeafe; color: #2255b0; border-color: #2255b0; }
+.event-date--blue { background: #DFF3E8; color: #0E6B43; border-color: #0E6B43; }
 
 .date-day   { font-family: 'Satoshi', sans-serif; font-size: 15px; font-weight: 700; line-height: 1; }
 .date-month { font-family: 'Inter', sans-serif; font-size: 9px; text-transform: uppercase; letter-spacing: 0.05em; opacity: 0.8; margin-top: 2px; }
 
 /* Body */
 .event-body  { flex: 1; min-width: 0; }
-.event-title { display: block; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #1a1917; margin-bottom: 4px; line-height: 1.4; transition: color 140ms; }
+.event-title { display: block; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #1F1F1B; margin-bottom: 4px; line-height: 1.4; transition: color 140ms; }
 .event-meta  { display: flex; align-items: center; gap: 5px; font-family: 'Inter', sans-serif; font-size: 11px; color: #85837c; flex-wrap: wrap; }
-.ev-org      { font-weight: 600; color: #2255b0; }
+.ev-org      { font-weight: 600; color: #0E6B43; }
 .ev-ext-icon { margin-left: 2px; color: #a8a69f; flex-shrink: 0; }
 .dot         { opacity: 0.4; }
 

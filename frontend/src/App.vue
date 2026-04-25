@@ -107,7 +107,7 @@ const isMobileOpen     = ref(false)
 .app-shell {
   display: flex;
   height: 100vh;
-  background: #eeedeb;
+  background: #F6F5F2;
   overflow: hidden;
 }
 
@@ -115,9 +115,9 @@ const isMobileOpen     = ref(false)
 .sidebar {
   width: 240px;
   min-width: 240px;
-  background: #f6f5f3;
-  border-right: 1px solid #e2e0dc;
-  border-top: 3px solid #166534;
+  background: #F1EFEA;
+  border-right: 1px solid #D9D5CD;
+  border-top: 3px solid #0E6B43;
   display: flex;
   flex-direction: column;
   transition: width 200ms ease-out, min-width 200ms ease-out;
@@ -139,7 +139,7 @@ const isMobileOpen     = ref(false)
 .mobile-close {
   background: none;
   border: none;
-  color: #65635d;
+  color: #6E6A63;
   cursor: pointer;
   padding: 4px;
   display: flex;
@@ -147,7 +147,7 @@ const isMobileOpen     = ref(false)
   border-radius: 5px;
   transition: background 150ms;
 }
-.mobile-close:hover { background: #e2e0dc; }
+.mobile-close:hover { background: #D9D5CD; }
 
 /* ── Nav ─────────────────────────────────────────────────────── */
 .sidebar-nav {
@@ -171,7 +171,7 @@ const isMobileOpen     = ref(false)
 }
 .nav-group--explore { padding-top: 2px; }
 .nav-group--org {
-  border-top: 1px solid #e2e0dc;
+  border-top: 1px solid #D9D5CD;
   margin-top: 10px;
   padding-top: 12px;
 }
@@ -181,7 +181,7 @@ const isMobileOpen     = ref(false)
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #65635d;
+  color: #6E6A63;
   padding: 5px 8px 3px;
   user-select: none;
 }
@@ -194,7 +194,7 @@ const isMobileOpen     = ref(false)
   border-left: 3px solid transparent;
   border-radius: 8px;
   text-decoration: none;
-  color: #65635d;
+  color: #6E6A63;
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;
   font-weight: 500;
@@ -203,14 +203,14 @@ const isMobileOpen     = ref(false)
   overflow: hidden;
 }
 .nav-item:hover {
-  background: #eeedeb;
-  color: #23221f;
+  background: #E8E4DC;
+  color: #1F1F1B;
 }
 .nav-item.router-link-exact-active {
   background: transparent;
-  color: #166534;
+  color: #0E6B43;
   font-weight: 600;
-  border-left-color: #166534;
+  border-left-color: #0E6B43;
 }
 
 /* ── Icon wrap — colored per section ────────────────────────── */
@@ -224,14 +224,14 @@ const isMobileOpen     = ref(false)
   flex-shrink: 0;
   transition: opacity 150ms ease-out;
 }
-.icon-bg--home     { background: #dcfce7; }
-.icon-bg--news     { background: #dbeafe; }
-.icon-bg--quiz     { background: #fee2e2; }
-.icon-bg--events   { background: #d1fae5; }
-.icon-bg--announce { background: #fee2e2; }
-.icon-bg--vision   { background: #dbeafe; }
-.icon-bg--about    { background: #d1fae5; }
-.icon-bg--ask      { background: #fdf4ff; }
+.icon-bg--home     { background: #DFF3E8; }
+.icon-bg--news     { background: #DFF3E8; }
+.icon-bg--quiz     { background: #DFF3E8; }
+.icon-bg--events   { background: #DFF3E8; }
+.icon-bg--announce { background: #DFF3E8; }
+.icon-bg--vision   { background: #DFF3E8; }
+.icon-bg--about    { background: #DFF3E8; }
+.icon-bg--ask      { background: #DFF3E8; }
 
 .nav-item:hover .nav-icon-wrap { opacity: 0.75; }
 .nav-item.router-link-exact-active .nav-icon-wrap {
@@ -241,17 +241,17 @@ const isMobileOpen     = ref(false)
 .nav-icon { flex-shrink: 0; transition: color 200ms ease-out; }
 
 /* Per-icon default colours */
-.icon-bg--home     .nav-icon { color: #166534; }
-.icon-bg--news     .nav-icon { color: #2255b0; }
-.icon-bg--quiz     .nav-icon { color: #d93535; }
-.icon-bg--events   .nav-icon { color: #5bb85d; }
-.icon-bg--announce .nav-icon { color: #d93535; }
-.icon-bg--vision   .nav-icon { color: #2255b0; }
-.icon-bg--about    .nav-icon { color: #5bb85d; }
-.icon-bg--ask      .nav-icon { color: #7c3aed; }
+.icon-bg--home     .nav-icon { color: #0E6B43; }
+.icon-bg--news     .nav-icon { color: #0E6B43; }
+.icon-bg--quiz     .nav-icon { color: #0E6B43; }
+.icon-bg--events   .nav-icon { color: #0E6B43; }
+.icon-bg--announce .nav-icon { color: #0E6B43; }
+.icon-bg--vision   .nav-icon { color: #0E6B43; }
+.icon-bg--about    .nav-icon { color: #0E6B43; }
+.icon-bg--ask      .nav-icon { color: #0E6B43; }
 
 /* Hover only — keep icon colour on active so each section retains its identity */
-.nav-item:hover .nav-icon { color: #166534; }
+.nav-item:hover .nav-icon { color: #0E6B43; }
 
 .nav-label { overflow: hidden; text-overflow: ellipsis; }
 
@@ -263,9 +263,9 @@ const isMobileOpen     = ref(false)
   width: 24px;
   height: 24px;
   border-radius: 50%;
-  border: 1px solid #e2e0dc;
-  background: #f6f5f3;
-  color: #65635d;
+  border: 1px solid #D9D5CD;
+  background: #F1EFEA;
+  color: #6E6A63;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -273,13 +273,13 @@ const isMobileOpen     = ref(false)
   transition: background 150ms;
   z-index: 10;
 }
-.collapse-btn:hover { background: #eeedeb; }
+.collapse-btn:hover { background: #E8E4DC; }
 
 /* ── Main content ────────────────────────────────────────────── */
 .main-content {
   flex: 1;
   overflow-y: auto;
-  background: #f8f7f5;
+  background: #FCFBF8;
 }
 
 /* ── Mobile header ───────────────────────────────────────────── */
@@ -288,7 +288,7 @@ const isMobileOpen     = ref(false)
   position: fixed;
   top: 0; left: 0; right: 0;
   height: 56px;
-  background: #166534;
+  background: #0E6B43;
   border-bottom: 1px solid rgba(255,255,255,0.1);
   z-index: 50;
   align-items: center;

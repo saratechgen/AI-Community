@@ -61,26 +61,22 @@ import { Quote, UserCircle } from 'lucide-vue-next'
 
 /* ── Header ─────────────────────────────────────────────────── */
 .page-header {
-  border-left: 4px solid #166534;
-  border-bottom: 1px solid #e2e0dc;
-  border-radius: 0 6px 0 0;
-  background: #f8f7f5;
-  padding: 12px 16px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #D9D5CD;
   margin-bottom: 16px;
 }
 .page-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 20px;
+  font-size: 28px;
   font-weight: 700;
-  color: #1a1917;
-  margin: 0 0 3px;
+  color: #1F1F1B;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
 }
 .page-subtitle {
   font-family: 'DM Sans', sans-serif;
-  font-size: 12px;
-  font-weight: 500;
-  color: #3a3834;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.85);
+  font-size: 14px;
+  color: #6E6A63;
   margin: 0;
 }
 
@@ -95,14 +91,13 @@ import { Quote, UserCircle } from 'lucide-vue-next'
 /* ── Card ───────────────────────────────────────────────────── */
 .message-card {
   background: #ffffff;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid #166534;
-  border-radius: 10px;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 18px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
 }
 
 .card-label {
@@ -111,7 +106,7 @@ import { Quote, UserCircle } from 'lucide-vue-next'
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  color: #166534;
+  color: #0E6B43;
 }
 
 .card-body {
@@ -121,7 +116,7 @@ import { Quote, UserCircle } from 'lucide-vue-next'
   flex: 1;
 }
 .quote-icon {
-  color: #dcfce7;
+  color: #DFF3E8;
   flex-shrink: 0;
   margin-top: 2px;
 }
@@ -129,7 +124,7 @@ import { Quote, UserCircle } from 'lucide-vue-next'
 .message-text p {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
-  color: #3a3834;
+  color: #3A3730;
   margin: 0;
   line-height: 1.7;
 }
@@ -140,14 +135,14 @@ import { Quote, UserCircle } from 'lucide-vue-next'
   align-items: center;
   gap: 10px;
   padding-top: 12px;
-  border-top: 1px solid #f0efe9;
+  border-top: 1px solid #ECEAE3;
 }
 .author-avatar {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: #dcfce7;
-  color: #166534;
+  background: #DFF3E8;
+  color: #0E6B43;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -162,12 +157,12 @@ import { Quote, UserCircle } from 'lucide-vue-next'
   font-family: 'Space Grotesk', sans-serif;
   font-size: 12px;
   font-weight: 700;
-  color: #1a1917;
+  color: #1F1F1B;
 }
 .author-org {
   font-family: 'DM Sans', sans-serif;
   font-size: 11px;
-  color: #a8a69f;
+  color: #A8A49D;
 }
 
 @media (max-width: 860px) {

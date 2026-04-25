@@ -4,7 +4,23 @@
       "Read(//c/Users/DELL/.claude/**)",
       "Bash(npm run *)",
       "Bash(/c/Windows/System32/taskkill.exe /F /PID 23984)",
-      "Bash(netstat -ano)"
+      "Bash(netstat -ano)",
+      "Bash(curl -s http://localhost:8001/api/quiz/today)",
+      "Bash(curl -s \"https://ai-community-backend.onrender.com/api/quiz/today\")",
+      "Bash(python -c \"import sys,json; d=json.load\\(sys.stdin\\); print\\('stages:', len\\(d['data'].get\\('stages',[]\\)\\), '| q1:', len\\(d['data']['stages'][0]['questions']\\) if d['data'].get\\('stages'\\) else 'MISSING'\\)\")",
+      "Bash(taskkill /PID 3132 /F)",
+      "PowerShell(Stop-Process -Id 3132 -Force)",
+      "Bash(curl -s \"http://localhost:8001/api/quiz/stage-status?email=test@test.com&quiz_date=2026-04-21\")",
+      "Bash(curl -s http://localhost:8001/api/quiz/leaderboard?quiz_date=2026-04-21)",
+      "Bash(curl -s http://localhost:3001)",
+      "Bash(curl -s --max-time 10 \"https://api.github.com/repos/nicedoc/confs.tech/contents/public/conferences\")",
+      "WebFetch(domain:github.com)",
+      "Bash(curl -s --max-time 3 http://localhost:3000 -o /dev/null -w \"%{http_code}\")",
+      "Bash(curl -s --max-time 3 http://localhost:3001 -o /dev/null -w \"%{http_code}\")",
+      "WebFetch(domain:aihub.org)",
+      "WebFetch(domain:week.dub.ai)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
     ]
   }
 }

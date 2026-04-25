@@ -64,7 +64,7 @@ async def save_articles(articles: list[dict]) -> int:
             try:
                 await db.execute(
                     """
-                    INSERT OR IGNORE INTO articles
+                    INSERT OR REPLACE INTO articles
                         (id, title, summary, source, url, published, category, fetched_at)
                     VALUES (?, ?, ?, ?, ?, ?, ?, ?)
                     """,

@@ -116,22 +116,19 @@ const visibleSections = computed(() =>
 /* Escape hatch: exceeds 250-line cap — NewsView has single responsibility (news feed UI) */
 .news-view {
   padding: 32px 40px;
-  --accent: #2255b0;
-  --accent-light: #dbeafe;
+  --accent: #0E6B43;
+  --accent-light: #DFF3E8;
 }
 
 /* Header */
 .news-header {
-  background: #f8f7f5;
-  border-left: 4px solid var(--accent);
-  border-bottom: 1px solid #e2e0dc;
-  border-radius: 0 6px 0 0;
-  padding: 14px 18px;
-  margin-bottom: 20px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #D9D5CD;
+  margin-bottom: 24px;
 }
-.news-title   { font-family: 'Space Grotesk', sans-serif; font-size: 22px; font-weight: 700; color: #1a1917; margin: 0 0 4px; }
-.news-subtitle { font-family: 'DM Sans', sans-serif; font-size: 13px; font-weight: 500; color: #3a3834; margin: 0; text-shadow: 0 1px 0 rgba(255,255,255,0.85); }
-.news-refreshed { font-family: 'DM Sans', sans-serif; font-size: 11px; color: #a8a69f; margin-top: 5px; display: block; }
+.news-title   { font-family: 'Space Grotesk', sans-serif; font-size: 28px; font-weight: 700; color: #1F1F1B; margin: 0 0 6px; letter-spacing: -0.01em; }
+.news-subtitle { font-family: 'DM Sans', sans-serif; font-size: 14px; color: #6E6A63; margin: 0; }
+.news-refreshed { font-family: 'DM Sans', sans-serif; font-size: 11px; color: #A8A49D; margin-top: 4px; display: block; }
 
 /* Filter chips */
 .filter-bar { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 28px; }
@@ -141,14 +138,14 @@ const visibleSections = computed(() =>
   font-weight: 600;
   padding: 6px 16px;
   border-radius: 20px;
-  border: 1.5px solid #e2e0dc;
-  background: #f8f7f5;
-  color: #65635d;
+  border: 1.5px solid #D9D5CD;
+  background: #F6F5F2;
+  color: #6E6A63;
   cursor: pointer;
   transition: all 150ms;
   white-space: nowrap;
 }
-.filter-chip:hover            { border-color: var(--accent); color: var(--accent); background: #eff6ff; }
+.filter-chip:hover            { border-color: var(--accent); color: var(--accent); background: #DFF3E8; }
 .filter-chip--active          { background: var(--accent); border-color: var(--accent); color: #fff; }
 .filter-chip--active:hover    { opacity: 0.9; }
 
@@ -156,22 +153,21 @@ const visibleSections = computed(() =>
 .news-section { margin-bottom: 36px; }
 .section-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 700;
-  color: #1a1917;
-  margin: 0 0 14px;
-  padding: 10px 14px;
-  border-left: 4px solid var(--accent);
-  border-bottom: 1px solid #e2e0dc;
-  background: #f8f7f5;
-  border-radius: 0 6px 0 0;
+  color: #1F1F1B;
+  margin: 0 0 16px;
+  padding: 0 0 10px;
+  border-bottom: 2px solid var(--accent);
+  background: transparent;
+  border-radius: 0;
   display: flex;
   align-items: center;
   gap: 10px;
 }
-.section-desc { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; color: #a8a69f; }
+.section-desc { font-family: 'DM Sans', sans-serif; font-size: 12px; font-weight: 400; color: #A8A49D; }
 .section-icon { color: var(--accent); flex-shrink: 0; transition: color 200ms, filter 200ms, transform 200ms; }
-.section-title:hover .section-icon { color: #1d4ed8; filter: drop-shadow(0 0 5px rgba(34,85,176,0.4)); transform: scale(1.15); }
+.section-title:hover .section-icon { color: #0A5736; filter: drop-shadow(0 0 5px rgba(14,107,67,0.4)); transform: scale(1.15); }
 .section-title:hover .icon-pop,
 .section-title:hover .icon-glow  { animation-play-state: paused; }
 
@@ -190,12 +186,12 @@ const visibleSections = computed(() =>
   color: #a8a69f;
   padding: 24px;
   text-align: center;
-  border: 1px dashed #e2e0dc;
+  border: 1px dashed #D9D5CD;
   border-radius: 8px;
 }
 
 /* Loading */
-.state-message { display: flex; align-items: center; justify-content: center; gap: 10px; font-family: 'DM Sans', sans-serif; font-size: 15px; color: #65635d; padding: 60px 0; }
+.state-message { display: flex; align-items: center; justify-content: center; gap: 10px; font-family: 'DM Sans', sans-serif; font-size: 15px; color: #6E6A63; padding: 60px 0; }
 .state-error   { color: #d64545; }
 .spin          { animation: spin 1s linear infinite; }
 @keyframes spin { to { transform: rotate(360deg); } }

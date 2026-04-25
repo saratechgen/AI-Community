@@ -130,18 +130,18 @@ fetchNews().then(() => { lastRefreshed.value = new Date() }).catch(() => {})
 }
 .news-col {
   background: #ffffff;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid var(--accent, #166534);
-  border-radius: 10px;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 18px 20px;
   display: flex;
   flex-direction: column;
   gap: 14px;
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
 }
 .col-header     { display: flex; flex-direction: column; gap: 3px; }
-.col-title      { font-family: 'Satoshi', sans-serif; font-size: 15px; font-weight: 700; color: #1a1917; margin: 0; display: flex; align-items: center; gap: 7px; }
-.col-icon       { color: #166534; }
-.last-refreshed { font-family: 'Inter', sans-serif; font-size: 11px; color: #a8a69f; }
+.col-title      { font-family: 'Satoshi', sans-serif; font-size: 15px; font-weight: 700; color: #1F1F1B; margin: 0; display: flex; align-items: center; gap: 7px; }
+.col-icon       { color: #0E6B43; }
+.last-refreshed { font-family: 'Inter', sans-serif; font-size: 11px; color: #A8A49D; }
 
 /* Featured + highlights grid */
 .home-news-grid {
@@ -158,26 +158,26 @@ fetchNews().then(() => { lastRefreshed.value = new Date() }).catch(() => {})
   flex-direction: column;
   gap: 3px;
   padding: 10px 0;
-  border-bottom: 1px solid #f0efe9;
+  border-bottom: 1px solid #ECEAE3;
   text-decoration: none;
-  transition: padding-left 150ms;
+  transition: padding-left 150ms, box-shadow 150ms, transform 150ms;
 }
 .highlight-row:last-child { border-bottom: none; }
-.highlight-row:hover      { padding-left: 4px; }
-.highlight-row:hover .hl-title { color: #166534; }
+.highlight-row:hover      { padding-left: 4px; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0,0,0,0.07); }
+.highlight-row:hover .hl-title { color: #0E6B43; }
 .hl-cat {
   font-family: 'Inter', sans-serif;
   font-size: 10px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: #166534;
+  color: #0E6B43;
 }
 .hl-title {
   font-family: 'Satoshi', sans-serif;
   font-size: 12px;
   font-weight: 600;
-  color: #1a1917;
+  color: #1F1F1B;
   line-height: 1.4;
   display: -webkit-box;
   -webkit-line-clamp: 2;
@@ -185,11 +185,11 @@ fetchNews().then(() => { lastRefreshed.value = new Date() }).catch(() => {})
   overflow: hidden;
   transition: color 150ms;
 }
-.hl-meta { font-family: 'Inter', sans-serif; font-size: 11px; color: #a8a69f; }
+.hl-meta { font-family: 'Inter', sans-serif; font-size: 11px; color: #A8A49D; }
 
 .col-state  { font-family: 'Inter', sans-serif; font-size: 13px; color: #85837c; padding: 20px 0; }
 .col-error  { color: #d64545; }
-.view-all   { display: inline-flex; align-items: center; gap: 4px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #166534; text-decoration: none; transition: gap 150ms; }
+.view-all   { display: inline-flex; align-items: center; gap: 4px; font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 600; color: #0E6B43; text-decoration: none; transition: gap 150ms; }
 .view-all:hover { gap: 8px; }
 
 /* NewsCard font override — scoped to homepage only */

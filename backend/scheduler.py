@@ -47,13 +47,10 @@ async def publish_quiz() -> None:
         log.info("publish_quiz: quiz already published for today")
         return
 
-    seed = int(today.replace("-", ""))
-
-    # 5 questions per stage, seeded by date for daily consistency
     stage_questions: dict[int, list[dict]] = {}
     all_questions: list[dict] = []
     for s in [1, 2, 3]:
-        qs = get_questions_for_stage(stage=s, n=5, seed=seed)
+        qs = get_questions_for_stage(stage=s, n=5, date_str=today)
         stage_questions[s] = qs
         all_questions.extend(qs)
 

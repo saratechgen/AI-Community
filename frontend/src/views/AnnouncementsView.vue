@@ -50,26 +50,22 @@ import { ExternalLink, Info } from 'lucide-vue-next'
 }
 
 .page-header {
-  border-left: 4px solid #166534;
-  border-bottom: 1px solid #e2e0dc;
-  border-radius: 0 6px 0 0;
-  background: #f8f7f5;
-  padding: 14px 18px;
+  padding: 0 0 20px;
+  border-bottom: 1px solid #D9D5CD;
   margin-bottom: 28px;
 }
 .page-title {
   font-family: 'Space Grotesk', sans-serif;
-  font-size: 22px;
+  font-size: 28px;
   font-weight: 700;
-  color: #1a1917;
-  margin: 0 0 4px;
+  color: #1F1F1B;
+  margin: 0 0 6px;
+  letter-spacing: -0.01em;
 }
 .page-subtitle {
   font-family: 'DM Sans', sans-serif;
-  font-size: 13px;
-  font-weight: 500;
-  color: #3a3834;
-  text-shadow: 0 1px 0 rgba(255,255,255,0.85);
+  font-size: 14px;
+  color: #6E6A63;
   margin: 0;
 }
 
@@ -81,14 +77,13 @@ import { ExternalLink, Info } from 'lucide-vue-next'
 
 .announcement-card {
   background: #ffffff;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid #166534;
-  border-radius: 10px;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 24px 28px;
   display: flex;
   flex-direction: column;
   gap: 14px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
 }
 
 .card-top {
@@ -102,8 +97,8 @@ import { ExternalLink, Info } from 'lucide-vue-next'
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #166534;
-  background: #dcfce7;
+  color: #0E6B43;
+  background: #DFF3E8;
   border-radius: 4px;
   padding: 3px 9px;
 }
@@ -113,8 +108,8 @@ import { ExternalLink, Info } from 'lucide-vue-next'
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.07em;
-  color: #85837c;
-  background: #f0efe9;
+  color: #857E76;
+  background: #ECEAE3;
   border-radius: 4px;
   padding: 3px 9px;
 }
@@ -123,7 +118,7 @@ import { ExternalLink, Info } from 'lucide-vue-next'
   font-family: 'Space Grotesk', sans-serif;
   font-size: 18px;
   font-weight: 700;
-  color: #1a1917;
+  color: #1F1F1B;
   margin: 0;
   line-height: 1.35;
 }
@@ -131,7 +126,7 @@ import { ExternalLink, Info } from 'lucide-vue-next'
 .card-desc {
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
-  color: #65635d;
+  color: #6E6A63;
   margin: 0;
   line-height: 1.7;
 }
@@ -142,7 +137,7 @@ import { ExternalLink, Info } from 'lucide-vue-next'
   gap: 6px;
   align-self: flex-start;
   padding: 9px 18px;
-  background: #166534;
+  background: #0E6B43;
   color: #f0fdf4;
   border-radius: 7px;
   font-family: 'DM Sans', sans-serif;
@@ -151,7 +146,7 @@ import { ExternalLink, Info } from 'lucide-vue-next'
   text-decoration: none;
   transition: background 150ms, gap 150ms;
 }
-.card-cta:hover { background: #0a2e1a; gap: 9px; }
+.card-cta:hover { background: #064022; gap: 9px; }
 
 .card-footer {
   display: flex;
@@ -159,11 +154,11 @@ import { ExternalLink, Info } from 'lucide-vue-next'
   gap: 6px;
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
-  color: #a8a69f;
+  color: #A8A49D;
   padding-top: 10px;
-  border-top: 1px solid #f0efe9;
+  border-top: 1px solid #ECEAE3;
 }
-.footer-icon { color: #a8a69f; flex-shrink: 0; }
+.footer-icon { color: #A8A49D; flex-shrink: 0; }
 
 @media (max-width: 640px) {
   .announcements-view { padding: 20px; }

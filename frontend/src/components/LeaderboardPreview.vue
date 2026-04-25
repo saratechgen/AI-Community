@@ -40,15 +40,14 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
 <style scoped>
 .quiz-strip {
   background: #ffffff;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid var(--accent, #166534);
-  border-radius: 10px;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 20px 24px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 24px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
 }
 
 /* Left: icon + text */
@@ -62,8 +61,8 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   width: 40px;
   height: 40px;
   border-radius: 9px;
-  background: #dcfce7;
-  color: #166534;
+  background: #DFF3E8;
+  color: #0E6B43;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -73,20 +72,20 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   font-family: 'Satoshi', sans-serif;
   font-size: 15px;
   font-weight: 700;
-  color: #1a1917;
+  color: #1F1F1B;
   margin: 0 0 3px;
 }
 .strip-hook {
   font-family: 'Satoshi', sans-serif;
   font-size: 13px;
   font-weight: 600;
-  color: #1a1917;
+  color: #1F1F1B;
   margin: 4px 0 2px;
 }
 .strip-rule {
   font-family: 'Inter', sans-serif;
   font-size: 12px;
-  color: #a8a69f;
+  color: #A8A49D;
   margin: 0;
 }
 
@@ -112,7 +111,7 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   font-family: 'Satoshi', sans-serif;
   font-size: 17px;
   font-weight: 700;
-  color: #166534;
+  color: #0E6B43;
   line-height: 1;
 }
 .stat-label {
@@ -125,7 +124,7 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
 .stat-divider {
   width: 1px;
   height: 30px;
-  background: #e2e0dc;
+  background: #D9D5CD;
 }
 .strip-title-row {
   display: flex;
@@ -139,7 +138,7 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  background: #166534;
+  background: #0E6B43;
   color: #f0fdf4;
   padding: 2px 8px;
   border-radius: 10px;
@@ -156,9 +155,9 @@ import { BrainCircuit, ArrowRight } from 'lucide-vue-next'
   align-items: center;
   gap: 6px;
   padding: 8px 14px;
-  background: #dcfce7;
-  color: #166534;
-  border: 1.5px solid #166534;
+  background: #DFF3E8;
+  color: #0E6B43;
+  border: 1.5px solid #0E6B43;
   border-radius: 7px;
   font-family: 'Inter', sans-serif;
   font-size: 12px;

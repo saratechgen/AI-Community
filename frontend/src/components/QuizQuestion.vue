@@ -62,7 +62,7 @@ function optionClass(key) {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 17px;
   font-weight: 600;
-  color: #1a1917;
+  color: #1F1F1B;
   line-height: 1.5;
   margin: 0;
 }
@@ -74,8 +74,8 @@ function optionClass(key) {
   align-items: center;
   gap: 10px;
   padding: 9px 14px;
-  background: #f8f7f5;
-  border: 1.5px solid #e2e0dc;
+  background: #F6F5F2;
+  border: 1.5px solid #D9D5CD;
   border-radius: 8px;
   cursor: pointer;
   text-align: left;
@@ -83,7 +83,7 @@ function optionClass(key) {
   width: 100%;
 }
 .option-btn:not(:disabled):hover {
-  border-color: #166534;
+  border-color: #0E6B43;
   background: #f0fdf4;
 }
 .option-btn:disabled { cursor: default; }
@@ -92,7 +92,7 @@ function optionClass(key) {
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;
   font-weight: 700;
-  color: #166534;
+  color: #0E6B43;
   background: #dcfce7;
   border-radius: 4px;
   padding: 2px 7px;
@@ -112,7 +112,7 @@ function optionClass(key) {
 
 .opt-dim { opacity: 0.45; }
 
-.feedback { padding: 14px 16px; background: #f8f7f5; border-radius: 8px; border-left: 4px solid var(--accent, #166534); }
+.feedback { padding: 14px 16px; background: #F6F5F2; border-radius: 8px; border-left: 4px solid var(--accent, #0E6B43); }
 .feedback-verdict {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 13px;
@@ -124,7 +124,7 @@ function optionClass(key) {
 .feedback-explanation {
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;
-  color: #65635d;
+  color: #6E6A63;
   margin: 0;
   line-height: 1.6;
 }

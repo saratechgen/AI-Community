@@ -65,29 +65,29 @@
   --tracking-wide: 0.02em;
 
   /* ── Colors: warm-tinted neutrals ──────────────────────────── */
-  --color-black: #1a1917;
-  --color-white: #faf9f7;
+  --color-black: #1F1F1B;
+  --color-white: #FCFBF8;
 
-  --gray-50:  #f6f5f3;
-  --gray-100: #eeedeb;
-  --gray-200: #e2e0dc;
-  --gray-300: #d1cfc9;
-  --gray-400: #a8a69f;
-  --gray-500: #85837c;
-  --gray-600: #65635d;
-  --gray-700: #4d4b46;
-  --gray-800: #353430;
-  --gray-900: #23221f;
+  --gray-50:  #F6F5F2;
+  --gray-100: #F1EFEA;
+  --gray-200: #D9D5CD;
+  --gray-300: #CCC8BF;
+  --gray-400: #A8A49D;
+  --gray-500: #857E76;
+  --gray-600: #6E6A63;
+  --gray-700: #4E4B46;
+  --gray-800: #363330;
+  --gray-900: #242220;
 
-  /* ── Accent: dark green ────────────────────────────────────── */
-  --accent-50:  #f0fdf4;
-  --accent-100: #dcfce7;
-  --accent-200: #86efac;
-  --accent-300: #4ade80;
-  --accent-400: #22c55e;
-  --accent-500: #14532d;
-  --accent-600: #0f4024;
-  --accent-700: #0a2e1a;
+  /* ── Accent: primary action green ─────────────────────────── */
+  --accent-50:  #DFF3E8;
+  --accent-100: #B8E8CA;
+  --accent-200: #6DC99D;
+  --accent-300: #3AAD7A;
+  --accent-400: #1D9160;
+  --accent-500: #0E6B43;
+  --accent-600: #0A5736;
+  --accent-700: #064022;
 
   /* ── Semantic: status ──────────────────────────────────────── */
   --color-success: #2d9d78;

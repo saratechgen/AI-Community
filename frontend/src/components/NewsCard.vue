@@ -42,20 +42,20 @@ const pubDate = computed(() => {
 <style scoped>
 /* ── Base card ─────────────────────────────────────────────── */
 .news-card {
-  background: #f8f7f5;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid var(--accent, #166534);
-  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   height: 100%;
   box-sizing: border-box;
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
   transition: border-color 180ms ease-out, box-shadow 180ms ease-out, transform 180ms ease-out;
 }
 .news-card:hover {
-  border-color: var(--accent, #166534);
+  border-color: var(--accent, #0E6B43);
   box-shadow: 0 4px 16px rgba(0,0,0,0.08), 0 0 0 1px rgba(34,85,176,0.1);
   transform: translateY(-2px);
 }
@@ -68,8 +68,8 @@ const pubDate = computed(() => {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.06em;
-  color: var(--accent, #166534);
-  background: var(--accent-light, #dcfce7);
+  color: var(--accent, #0E6B43);
+  background: var(--accent-light, #DFF3E8);
   padding: 3px 8px;
   border-radius: 4px;
   white-space: nowrap;
@@ -89,7 +89,7 @@ const pubDate = computed(() => {
   font-family: 'Space Grotesk', sans-serif;
   font-size: 14px;
   font-weight: 700;
-  color: #1a1917;
+  color: #1F1F1B;
   margin: 0;
   line-height: 1.4;
   display: -webkit-box;
@@ -102,7 +102,7 @@ const pubDate = computed(() => {
 .card-summary {
   font-family: 'DM Sans', sans-serif;
   font-size: 13px;
-  color: #65635d;
+  color: #6E6A63;
   margin: 0;
   line-height: 1.6;
   flex: 1;
@@ -120,11 +120,11 @@ const pubDate = computed(() => {
   font-family: 'DM Sans', sans-serif;
   font-size: 12px;
   font-weight: 700;
-  color: var(--accent, #166534);
+  color: var(--accent, #0E6B43);
   text-decoration: none;
   margin-top: auto;
   padding-top: 10px;
-  border-top: 1px solid #e2e0dc;
+  border-top: 1px solid #D9D5CD;
   transition: opacity 150ms, gap 150ms;
 }
 .read-more:hover { opacity: 0.75; gap: 7px; }
@@ -133,7 +133,7 @@ const pubDate = computed(() => {
 .news-card--featured {
   background: #fff;
   border-top: none;
-  border-left: 4px solid var(--accent, #166534);
+  border-left: 4px solid var(--accent, #0E6B43);
   padding: 20px;
   gap: 12px;
 }
@@ -149,7 +149,7 @@ const pubDate = computed(() => {
 .news-card--compact {
   padding: 12px 14px;
   gap: 7px;
-  background: #faf9f7;
+  background: #F6F5F2;
 }
 .news-card--compact .card-title {
   font-size: 13px;

@@ -34,15 +34,14 @@ const { data } = useStaticJson('/data/hero.json')
 
 <style scoped>
 .hero {
-  background: #f8f7f5;
-  border: 1px solid #e2e0dc;
-  border-top: 3px solid var(--accent, #166534);
-  border-radius: 10px;
+  background: #ffffff;
+  border: 1px solid #D9D5CD;
+  border-radius: 12px;
   padding: 16px 32px 20px;
   display: flex;
   flex-direction: column;
   gap: 12px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+  box-shadow: 0 1px 4px rgba(31,31,27,0.05), 0 4px 16px rgba(31,31,27,0.04);
 }
 
 .hero-eyebrow {
@@ -54,13 +53,13 @@ const { data } = useStaticJson('/data/hero.json')
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
-  color: #166534;
+  color: #0E6B43;
 }
 .eyebrow-dot {
   width: 6px;
   height: 6px;
   border-radius: 50%;
-  background: #166534;
+  background: #0E6B43;
   flex-shrink: 0;
 }
 
@@ -68,7 +67,7 @@ const { data } = useStaticJson('/data/hero.json')
   font-family: 'Satoshi', sans-serif;
   font-size: 30px;
   font-weight: 700;
-  color: #1a1917;
+  color: #1F1F1B;
   margin: 0;
   line-height: 1.2;
 }
@@ -77,7 +76,7 @@ const { data } = useStaticJson('/data/hero.json')
   font-family: 'Inter', sans-serif;
   font-size: 15px;
   font-weight: 500;
-  color: #3a3834;
+  color: #3A3730;
   margin: 0;
   line-height: 1.75;
   max-width: 640px;
@@ -102,10 +101,10 @@ const { data } = useStaticJson('/data/hero.json')
   transition: background 150ms, gap 150ms;
 }
 .hero-cta--primary {
-  background: #166534;
+  background: #0E6B43;
   color: #f0fdf4;
 }
-.hero-cta--primary:hover { background: #0a2e1a; gap: 10px; }
+.hero-cta--primary:hover { background: #064022; gap: 10px; }
 
 .hero-categories {
   display: flex;
@@ -116,8 +115,8 @@ const { data } = useStaticJson('/data/hero.json')
   font-family: 'Inter', sans-serif;
   font-size: 11px;
   font-weight: 600;
-  color: #166534;
-  background: #dcfce7;
+  color: #0E6B43;
+  background: #DFF3E8;
   border-radius: 4px;
   padding: 3px 9px;
 }
@@ -133,16 +132,16 @@ const { data } = useStaticJson('/data/hero.json')
   font-weight: 500;
   color: #85837c;
   background: #fff;
-  border: 1px solid #e2e0dc;
+  border: 1px solid #D9D5CD;
   border-radius: 20px;
   padding: 4px 12px;
   text-decoration: none;
   transition: border-color 150ms, color 150ms, background 150ms;
 }
 .hero-pill:hover {
-  border-color: #166534;
-  color: #166534;
-  background: #dcfce7;
+  border-color: #0E6B43;
+  color: #0E6B43;
+  background: #DFF3E8;
 }
 
 @media (max-width: 640px) {

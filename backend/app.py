@@ -68,9 +68,8 @@ async def lifespan(app: FastAPI):
     await init_quiz_db()
     await init_dubai_events_db()
 
-    if await is_empty():
-        log.info("Database empty — running initial fetch")
-        await refresh_news()
+    log.info("Running startup news fetch")
+    await refresh_news()
 
     await publish_quiz()
     start_scheduler()

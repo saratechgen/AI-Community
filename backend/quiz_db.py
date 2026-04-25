@@ -6,7 +6,7 @@ Same DB file (news.db), separate tables.
 import json
 import uuid
 import aiosqlite
-from datetime import datetime, timezone, date as _date
+from datetime import datetime, timezone, date as _date, timedelta
 from pathlib import Path
 
 DB_PATH          = Path(__file__).parent / "news.db"
@@ -106,6 +106,23 @@ async def publish_daily_quiz(
             (quiz_date, json.dumps(all_ids), json.dumps(stage_ids), now),
         )
         await db.commit()
+
+
+async def get_recent_question_ids(days: int = 7) -> set[str]:
+    """Return question IDs published in the past N days (for exclusion window)."""
+    cutoff = (_date.today() - timedelta(days=days)).isoformat()
+    async with aiosqlite.connect(DB_PATH) as db:
+        cur = await db.execute(
+            "SELECT stage_question_ids FROM quiz_daily WHERE quiz_date > ?",
+            (cutoff,),
+        )
+        rows = await cur.fetchall()
+    ids: set[str] = set()
+    for row in rows:
+        if row[0]:
+            for id_list in json.loads(row[0]).values():
+                ids.update(id_list)
+    return ids
 
 
 async def has_quiz_today(quiz_date: str | None = None) -> bool:
@@ -280,7 +297,9 @@ async def get_leaderboard(
     quiz_date: str | None = None,
     limit: int = LEADERBOARD_LIMIT,
 ) -> list[dict]:
-    """Rank by: highest stage cleared → total score → completion time → first attempt."""
+    """Rank by: highest stage cleared → total score → completion time → first attempt.
+    Only users who cleared Stage 1 (score >= PASS_MARK) appear on the leaderboard.
+    """
     if quiz_date is None:
         quiz_date = _date.today().isoformat()
     async with aiosqlite.connect(DB_PATH) as db:
@@ -289,19 +308,20 @@ async def get_leaderboard(
                  email,
                  MAX(username)                                        AS username,
                  MAX(CASE WHEN score >= ? THEN stage ELSE 0 END)     AS highest_stage,
-                 SUM(score)                                          AS total_score,
+                 SUM(CASE WHEN score >= ? THEN score ELSE 0 END)     AS total_score,
                  MIN(CASE WHEN stage=3 THEN attempted_at ELSE NULL END) AS completed_at,
                  MIN(attempted_at)                                   AS first_attempt
                FROM quiz_attempts
                WHERE quiz_date=? AND is_official=1 AND stage IN (1,2,3)
                GROUP BY email
+               HAVING MAX(CASE WHEN stage=1 AND score >= ? THEN 1 ELSE 0 END) = 1
                ORDER BY
                  highest_stage DESC,
                  total_score   DESC,
                  COALESCE(completed_at, '9999') ASC,
                  first_attempt ASC
                LIMIT ?""",
-            (PASS_MARK, quiz_date, limit),
+            (PASS_MARK, PASS_MARK, quiz_date, PASS_MARK, limit),
         )
         rows = await cur.fetchall()
 
