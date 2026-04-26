@@ -633,5 +633,10 @@ async function showFinal() {
   .quiz-layout { grid-template-columns: 1fr; }
   .quiz-panel  { position: static; order: -1; }
 }
-@media (max-width: 640px) { .quiz-view { padding: 16px; } }
+@media (max-width: 640px) {
+  .quiz-view        { padding: 16px; }
+  .welcome-card     { padding: 36px 20px; }
+  .welcome-name     { font-size: 22px; white-space: normal; }
+  .welcome-sentence { flex-wrap: wrap; font-size: 15px; }
+}
 </style>
