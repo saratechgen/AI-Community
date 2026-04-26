@@ -16,9 +16,6 @@ from quiz_db import (
 log    = logging.getLogger("quiz")
 router = APIRouter()
 
-_EMAIL_RE = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
-
-
 class AttemptPayload(BaseModel):
     email:     str
     username:  str = ''
@@ -30,8 +27,8 @@ class AttemptPayload(BaseModel):
     @classmethod
     def email_valid(cls, v: str) -> str:
         v = v.strip().lower()
-        if not _EMAIL_RE.match(v):
-            raise ValueError("A valid email address is required to submit.")
+        if not v:
+            raise ValueError("An identifier is required to submit.")
         return v
 
     @field_validator("username")

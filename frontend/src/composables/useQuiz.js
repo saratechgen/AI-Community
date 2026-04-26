@@ -89,6 +89,7 @@ export function useQuiz() {
     })
     const json = await res.json()
     if (json.error) throw new Error(json.error.message)
+    if (!json.data) throw new Error('Unexpected response from server. Please try again.')
     const result = json.data
     stageResults.value = { ...stageResults.value, [stage]: result }
     if (result.is_official) {
