@@ -6,12 +6,22 @@ const API = import.meta.env.VITE_API_URL ?? 'http://localhost:8001'
 const _quiz        = ref(null)
 const _leaderboard = ref([])
 
+function getDeviceId() {
+  const KEY = 'quiz_device_id'
+  let id = localStorage.getItem(KEY)
+  if (!id) {
+    id = crypto.randomUUID()
+    localStorage.setItem(KEY, id)
+  }
+  return id
+}
+
 export function useQuiz() {
   // Session state — local per component instance, resets cleanly on every mount
   const loading         = ref(false)
   const error           = ref(null)
-  const phase           = ref('gate')   // 'gate' | 'quiz' | 'stage-result' | 'final'
-  const email           = ref('')
+  const phase           = ref('gate')   // 'gate' | 'welcome' | 'quiz' | 'stage-result' | 'final'
+  const email           = ref(getDeviceId())
   const emailError      = ref('')
   const username        = ref('')
   const usernameError   = ref('')

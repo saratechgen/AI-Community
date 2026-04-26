@@ -79,16 +79,13 @@
             <p v-if="usernameError" class="field-error">{{ usernameError }}</p>
           </div>
           <div class="field">
-            <label class="field-label">Work email <span class="field-required">*</span></label>
+            <label class="field-label">Work email</label>
             <input
-              v-model="email"
-              type="email"
-              class="field-input"
-              placeholder="you@dewa.gov.ae"
-              required
-              @keyup.enter="startQuiz"
+              type="text"
+              class="field-input field-input--disabled"
+              placeholder="Disabled for security reasons"
+              disabled
             />
-            <p v-if="emailError" class="field-error">{{ emailError }}</p>
           </div>
           <button class="btn-primary btn-full" :disabled="submitting" @click="startQuiz">
             {{ submitting ? 'Loading…' : 'Start Quiz' }}
@@ -400,21 +397,15 @@ function isYou(entry) {
 
 async function startQuiz() {
   usernameError.value = ''
-  emailError.value    = ''
 
   if (!username.value.trim()) {
     usernameError.value = 'Please enter your name.'
     return
   }
-  const v = email.value.trim()
-  if (!v || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(v)) {
-    emailError.value = 'Please enter a valid email address.'
-    return
-  }
 
   submitting.value = true
   try {
-    await loadStageStatus(v)
+    await loadStageStatus(email.value)
   } finally {
     submitting.value = false
   }
@@ -504,6 +495,7 @@ async function showFinal() {
 .field-input  { padding: 10px 14px; border: 1.5px solid #D9D5CD; border-radius: 7px; font-family: 'DM Sans', sans-serif; font-size: 14px; background: #fff; outline: none; transition: border-color 150ms; }
 .field-input:focus { border-color: #0E6B43; }
 .field-error  { font-family: 'DM Sans', sans-serif; font-size: 12px; color: #dc2626; margin: 0; }
+.field-input--disabled { background: #F6F5F2; color: #A8A49D; cursor: not-allowed; border-color: #ECEAE3; }
 
 /* Gate 3-column layout */
 .gate-layout { display: grid; grid-template-columns: 1fr 1.1fr 1fr; gap: 16px; align-items: stretch; }
