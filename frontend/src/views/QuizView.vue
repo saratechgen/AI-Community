@@ -214,7 +214,7 @@
                 Not quite there yet — aim for 4/5 on Stage 1 to secure your leaderboard spot. You've got this!
               </template>
               <template v-else>
-                Your Stage 1 result keeps you on the leaderboard. Clear this stage to improve your rank — give it another go!
+                Your Stage {{ highestStageCleared }} result keeps you on the leaderboard. Clear this stage to improve your rank — give it another go!
               </template>
             </div>
 
